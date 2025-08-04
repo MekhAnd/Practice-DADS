@@ -1,6 +1,7 @@
 # MAGIST PROJECT
 
 * ### School
+* ### Instructors
 * ### Legend
 * ### Team 
 * ### Table of Slides
@@ -10,6 +11,11 @@
 ## Schhol:
     
 __WBS Web Coding School__
+
+## Instructors
+* Marlo Paßler
+* Semira Berner
+* Sama Ardi
 
 ## Legend:
 
