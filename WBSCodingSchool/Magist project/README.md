@@ -8,7 +8,7 @@
 * ### List of Tools and Technologies
 
 
-## Schhol:
+## School:
     
 __WBS Web Coding School__
 
