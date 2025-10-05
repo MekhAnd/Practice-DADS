@@ -67,6 +67,9 @@ Displaying genre distribution in playlists (3 playlists, n_clusters = 146, PCA(0
 ## Notebook
 You can find [notebook here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ML/Unsupervised%20learning/MLI_diff_clusters_500.ipynb)
 
+## Presentation
+You can find [presentation here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ML/Unsupervised%20learning/Moosic.pdf)
+
 ## List of Tools and Technologies
 Python, sklearn (KMeans), seaborn, plotly, matplotlib
 
