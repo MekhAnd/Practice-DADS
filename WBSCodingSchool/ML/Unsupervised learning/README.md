@@ -65,7 +65,7 @@ Displaying genre distribution in playlists (3 playlists, n_clusters = 146, PCA(0
 - Charts
 
 ## Notebook
-You can find [notebook here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ETL_pipline_project/ETL_pipline_project.ipynb)
+You can find [notebook here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ML/Unsupervised%20learning/MLI_diff_clusters_500.ipynb)
 
 ## List of Tools and Technologies
 Python, sklearn (KMeans), seaborn, plotly, matplotlib
