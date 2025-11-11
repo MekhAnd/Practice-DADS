@@ -1,0 +1,67 @@
+# --- Operating System Files ---
+Thumbs.db # Windows system files
+
+# --- Virtual Environment ---
+venv/
+env/
+.venv/
+/ENV/
+/env.bak/
+/venv.bak/
+
+# --- Byte-Compiled Files ---
+*.pyc
+__pycache__/
+*.pyd
+*.so
+
+# --- Testing and Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+
+# --- Build/Distribution Files ---
+dist/
+build/
+*.egg
+*.whl
+*.spec
+
+# Streamlit secrets file (MUST be ignored)
+secrets.toml
+# Local Streamlit temporary cache directory
+.streamlit/
+# Session state cache
+.st_session_cache/
+
+# --- Data and Credentials ---
+# Ignore general configuration files and credentials
+*.env
+.env.local
+config.ini
+settings.py # (or any file you store local configuration in)
+
+# General data directories
+data/
+media/
+upload/
+
+# Database files
+*.sqlite
+*.db
+*.mdb
+
+# --- IDE Files (Optional but Recommended) ---
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Logs and temporary files
+*.log
+tmp/

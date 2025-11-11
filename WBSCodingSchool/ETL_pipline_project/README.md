@@ -1,4 +1,4 @@
-# MAGIST PROJECT
+# ETL Pipeline PROJECT
 
 * ### School
 * ### Instructors
