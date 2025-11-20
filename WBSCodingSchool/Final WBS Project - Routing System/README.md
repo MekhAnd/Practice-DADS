@@ -148,13 +148,13 @@ A small number of examples
 ## Next Steps
 
 Add:
-- a separate script for calculating which uses K-Means constrained (will add balance for routes (by the number of retail outlets on each)) => here
+- a separate script for calculating which uses K-Means constrained (will add balance for routes (by the number of retail outlets on each)) => [here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/TSP_Python)
 - additional API points for determining geospatial coordinates
 - the ability to use other routing algorithms (Google, PyVRP)
 - the ability to calculate fuel consumption for each route (based on entered indicators or on information about the car)
 
 ### Presentation
-You can find the presentation of project here
+You can find the presentation of project [here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/Final%20WBS%20Project%20-%20Routing%20System/Routing_sys.pdf) 
 
 ## List of Tools and Technologies
 Python, Pandas, API, Scikit-learn (K-Means, K-Means constrained, DBSCAN, HDBSCAN, Spectral Clustering), Folium, Streamlit
