@@ -1,33 +1,3 @@
-# FINAL PROJECT ROUTING SYSTEM
-
-* ### School
-* ### Instructors
-* ### About
-* ### Instalation
-* ### How it should work
-* ### Scenarios
-* ### Next Steps
-* ### Presentation
-* ### List of Tools and Technologies
-
-
-Almost the same BUT:
-- without Stremlit
-- with balanced clusters (the routes will have almost the same number of visits)
-- all maps will export as  *.html files
-- all routes will be saved in  *.csv files
-
-here 
-
-
-
-## School:
-    
-__WBS Web Coding School__
-
-## Instructor
-* Marlo Paßler
-
 ## About:
 This project is closely related to a problem that humanity has been trying to solve for about 200 years, and almost every year brings us new solutions. More precisely, it is not a problem— it is a question that sounds something like this: What is the optimal route for delivering goods to a specific group of customers?
 
@@ -84,9 +54,21 @@ And install all dependencies:
 
 `pip install -r requirements.txt`
 
-__Final Phase__
+__To start project__
+python routing.py
 
-`streamlit run vrp_app.py`
+__Note!__
+
+Put into the root folder file "customer_base.csv". Necessary fields:
+* "index" : "int"
+* "CustomerCountry" : Srting
+* "CustomerCity" : Srting
+* "CustomerStreet" : Srting
+* "CustomerNumer" : Srting
+* "CustomerLon" : "float"
+* "CustomerLat" : "float"
+* "Group": not necessary
+
 
 ## How it should work
 
@@ -116,26 +98,24 @@ For the local server instance, calculating the distance matrices for 500 custome
 
 
 1. __All Routes__
-After the calculation under the Calculate button you will see Have Done and the table with all routes and all days.
-2. __Route by Day__
-On page Tables you can find driving routes for each car for each day. The points of visit are arranged in the order of visit starting from the starting point and ending there. For each point the distance and time are shown. 
-You can also download each table.
-3. __Maps__
+After the calculation you can find:
+ * A table with all routes and all points on these routes in all_routes.csv.
+ * A table with all routes, all days and all points on these routes in all_routes_days.csv.
+ * A table with all the routes` sequences in routes_sequences.csv.
+ * Tables with short statistily information - general_ovwROUTE_NUMBER.csv
+
+2. __Maps__
 __FYA__
 Your route won`t be drawn on the map if:
 
 _Even for the local server_, openroutesservice has restriction for the length of the route (not more than 100 km) and for the stop point at the point on the route (line 225 in routing_utils.py contains 50 meters - if you would like, you can change it there).
 
-In any case, on this page, you can find a visual representation of your routes by day. Each pin - your customer, and each pin has a pop-up with the number of visits.
+In any case, in folder "Maps", you can find a visual representation of your routes. 
+* all_points.html - All points that were in the  customer base will be pinned here
+* all_points_routes.html - All points split by routes will be pinned here
+* route_0_0.html - Daily route - "route_ROUTE_DAY.html"
 
-For the entire view of your customer base, select the “Show me everything!” checkbox. Each color in this view represents a route.
-4. __Statistic__
-Here you can find two sub-parts General Overview and KPI:
-a. General Overview, shows you Nuber of customers, Total Distance and Total Duration (without service duration) for each route, and all days.
-b. KPI, shows you the whole information on the chosen route, and also you have the opportunity to additionally consider the scenario of what would happen if the visit time were changed from 5 minutes to...
-
-5. __Other UML and models__
-This page represents how different clustering algorithms solve this problem and exists only for educational purposes
+Each pin - your customer, and each pin has a pop-up with the number of visits.
 
 ## Scenarios
 
@@ -148,15 +128,10 @@ A small number of examples
 ## Next Steps
 
 Add:
-- a separate script for calculating which uses K-Means constrained (will add balance for routes (by the number of retail outlets on each)) => here
 - additional API points for determining geospatial coordinates
 - the ability to use other routing algorithms (Google, PyVRP)
 - the ability to calculate fuel consumption for each route (based on entered indicators or on information about the car)
 
-### Presentation
-You can find the presentation of project here
 
 ## List of Tools and Technologies
-Python, Pandas, API, Scikit-learn (K-Means, K-Means constrained, DBSCAN, HDBSCAN, Spectral Clustering), Folium, Streamlit
-
-
+Python, Pandas, API, Scikit-learn (K-Means constrained), Folium
