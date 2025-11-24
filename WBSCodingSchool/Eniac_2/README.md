@@ -77,4 +77,4 @@ __Highlights:__
 Python, pandas, matplotlib, seaborn, Google Slides
 
 ## Slides
-You can find [Slides here]().
+You can find [Slides here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/Eniac_2/Eniac_2_presentation.pdf).
