@@ -1,0 +1,851 @@
+disc_cat,brand,top_brand,top_category,category,correlation_coefficient_
+High,8Mobility,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Allocacoc,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.5941862318885917
+High,Apple,In TOP Brands,In TOP Categories,Apple MacBook,0.8655641901713751
+High,Apple,In TOP Brands,In TOP Categories,Apple iMac,
+High,Apple,In TOP Brands,In TOP Categories,Apple iPad,
+High,Apple,In TOP Brands,In TOP Categories,Apple iPhone,-0.017071692386346735
+High,Apple,In TOP Brands,In TOP Categories,Electronic Devises,-0.003524569771471415
+High,Apple,In TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Apple,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.05368113158935024
+High,Apple,In TOP Brands,NOT in TOP Categories,Cables,-0.07286282138196182
+High,Apple,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Apple,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.23123796376233466
+High,Apple,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Apple,In TOP Brands,NOT in TOP Categories,Routers,
+High,Be.ez,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Beats,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+High,Belkin,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.3108247815352589
+High,Belkin,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,Belkin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.03804084248086307
+High,Belkin,NOT in TOP Brands,NOT in TOP Categories,Cables,
+High,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.0711189764588919
+High,Belkin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",0.09909240879604385
+High,BenQ,NOT in TOP Brands,In TOP Categories,Monitors,
+High,Bose,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+High,Crucial,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.04063446638693558
+High,Cygnett,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+High,D-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.18204747394051196
+High,D-Link,NOT in TOP Brands,In TOP Categories,Monitors,
+High,D-Link,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",-0.21153860862336282
+High,D-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,0.04250414017538385
+High,DJI,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Dell,In TOP Brands,In TOP Categories,Monitors,0.858779879804232
+High,Devia,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Dodocool,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Drobo,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,Eizo,NOT in TOP Brands,In TOP Categories,Monitors,
+High,Elago,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Elago,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+High,Elago,NOT in TOP Brands,NOT in TOP Categories,Cables,
+High,Elago,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Elago,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Elgato,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.17624293290194024
+High,FCM,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.9056886540797375
+High,G-Technology,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,GoPro,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Griffin,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Griffin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.02260775171763092
+High,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-1.0000000000000007
+High,Griffin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+High,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+High,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+High,IK Multimedia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Incase,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+High,JBL,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.04234887428290944
+High,Jawbone,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.015545810394028104
+High,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",0.689202437604511
+High,Just Mobile,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Kanex,NOT in TOP Brands,NOT in TOP Categories,Cables,
+High,Kanex,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Kingston,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.12315369878072825
+High,Kukaclip,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,LG,In TOP Brands,In TOP Categories,Monitors,
+High,LG,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+High,LMP,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,LaCie,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.07945543973384256
+High,Lexar,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.12257334427460985
+High,Lifeproof,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.002132793617798236
+High,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.2858970414361869
+High,Logitech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Logitech,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+High,Logitech,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Macally,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.03295213120255705
+High,Macally,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.14826206874554054
+High,Macally,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Macally,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Matias,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.04181414395980092
+High,Mediterrans,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Microsoft,NOT in TOP Brands,In TOP Categories,Apple iMac,
+High,Minibatt,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Mophie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.46386933261821495
+High,Mophie,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",0.021965892921347395
+High,Moshi,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Moshi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Moxie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.09991033635684692
+High,Moxie,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Muvit,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.120847412061348
+High,Muvit,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,My MW,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Nest,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Nest,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+High,Netatmo,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.162738738688671
+High,Netatmo,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+High,NewerTech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,NewerTech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.19749252334007067
+High,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+High,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.9625901137356129
+High,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+High,Nodon,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Nomad,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+High,OWC,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.09454162065329459
+High,OWC,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,1.0
+High,OWC,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.009003520720359825
+High,Oblumi,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Olloclip,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Otterbox,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.041258743747126424
+High,Pack,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,Pack,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.029333006265618414
+High,Pack,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Pack,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Parrot,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Parrot,NOT in TOP Brands,NOT in TOP Categories,Drones,
+High,Philips,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.5104712944530126
+High,Plantronics,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.14482275323605343
+High,Prynt,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Puro,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,QNAP,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,Rain Design,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+High,Repair,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+High,Replacement,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",0.4899649523618839
+High,STM,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Samsung,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.1520057742626052
+High,SanDisk,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.06662230561622352
+High,Satechi,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.05858505408516814
+High,Satechi,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+High,Satechi,NOT in TOP Brands,NOT in TOP Categories,Cables,-1.0
+High,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.19079239309660523
+High,Satechi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.930234675413166
+High,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.03746144584944169
+High,Seagate,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.06155995471525262
+High,Sen.se,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.04303314829119355
+High,Sonnet,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+High,Sonos,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.45118655908956845
+High,Spek SeeThru,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.011241488827906442
+High,Sphero,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.1218123867148102
+High,Startech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+High,Startech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.9940872180425084
+High,SwitchEasy,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,SwitchEasy,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.004203903306804526
+High,TP-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Cables,0.023584080446180728
+High,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,0.1728507710148724
+High,Tangram,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Thule,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Tile,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Toshiba,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",1.0
+High,TrackR,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.49999999999999933
+High,Trascend,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.487781119445632
+High,Trunk Sleeve,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Tucano,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Tucano,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.3058785539163435
+High,Twelve South,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.7691908764143155
+High,Urban Armor Gear,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,Wacom,In TOP Brands,In TOP Categories,Apple iMac,
+High,Wacom,In TOP Brands,In TOP Categories,Electronic Devises,0.6326965787675396
+High,Wacom,In TOP Brands,In TOP Categories,Monitors,
+High,Wacom,In TOP Brands,In TOP Categories,Tablets,0.02289915882502258
+High,Wacom,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,Western Digital,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.2668614933974906
+High,Whoosh,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Withings,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,Wowewa,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.0355229008466449
+High,Wowewa,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.2821318428339904
+High,X-Doria,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.14064485677583924
+High,X-Doria,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+High,Xoopar,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+High,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.01444227121276222
+High,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.02299610249091362
+High,ZaggKeys,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+High,iFixit,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.07971414015342844
+High,iFrogz,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+High,iHealth,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+High,iOttie,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",1.0000000000001386
+Low or Negative,8Mobility,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Acme,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Adonit,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.032279049358919176
+Low or Negative,Aiino,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Akitio,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Akitio,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.29045593558095195
+Low or Negative,Allocacoc,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.05857394291218802
+Low or Negative,Apple,In TOP Brands,In TOP Categories,Apple MacBook,0.01144280015113383
+Low or Negative,Apple,In TOP Brands,In TOP Categories,Apple iMac,-0.04680167083538783
+Low or Negative,Apple,In TOP Brands,In TOP Categories,Apple iPad,-0.009220960364359623
+Low or Negative,Apple,In TOP Brands,In TOP Categories,Apple iPhone,-0.03432509034276088
+Low or Negative,Apple,In TOP Brands,In TOP Categories,Electronic Devises,0.012016187402603578
+Low or Negative,Apple,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Apple,In TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.019086595818367785
+Low or Negative,Apple,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.0724716251904664
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Apple Watch,0.009510403984798837
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Apple iPod,0.018863669510415244
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Cables,0.1956638503743314
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.00240937914110061
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.04259482859639681
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.04930047083239516
+Low or Negative,Apple,In TOP Brands,NOT in TOP Categories,Routers,0.17083532786834235
+Low or Negative,Band&Strap,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Be.ez,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Be.ez,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.03632640164009987
+Low or Negative,Beats,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Belkin,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Belkin,NOT in TOP Brands,In TOP Categories,Monitors,
+Low or Negative,Belkin,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.27206391674142955
+Low or Negative,Belkin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.08562050820355273
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,Cables,0.3717712817629161
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.03686536723465914
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.02531741679100956
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.9999999999999998
+Low or Negative,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.12929925024852745
+Low or Negative,BenQ,NOT in TOP Brands,In TOP Categories,Monitors,-0.017541889013383903
+Low or Negative,Blue Microphones,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Blue Microphones,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.026892570053223125
+Low or Negative,BlueLounge,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,BodyGuardz,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Booq,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Boostcase,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Bose,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.013841619976215663
+Low or Negative,Bose,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Casetify,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Cogito,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Crucial,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.01458156432600772
+Low or Negative,Cyberpower,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.06995803609579715
+Low or Negative,Cygnett,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Cygnett,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,D-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.10299448988855787
+Low or Negative,D-Link,NOT in TOP Brands,In TOP Categories,Monitors,
+Low or Negative,D-Link,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.2891967979890283
+Low or Negative,D-Link,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",-0.19263684181935203
+Low or Negative,D-Link,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,D-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,-0.10649523050316338
+Low or Negative,DJI,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,DJI,NOT in TOP Brands,NOT in TOP Categories,Drones,
+Low or Negative,Dell,In TOP Brands,In TOP Categories,Monitors,0.10970906871756639
+Low or Negative,Devia,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Devia,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Devolo,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Devolo,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Devolo,NOT in TOP Brands,NOT in TOP Categories,Routers,0.2106718135585566
+Low or Negative,Dodocool,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Dodocool,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.11322770341445958
+Low or Negative,Dodocool,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Drobo,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Eizo,NOT in TOP Brands,In TOP Categories,Monitors,0.27654566042781586
+Low or Negative,Eizo,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Low or Negative,Elago,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Elago,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.27420984476711086
+Low or Negative,Elago,NOT in TOP Brands,NOT in TOP Categories,Cables,0.09423539080573144
+Low or Negative,Elago,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.10869491829753548
+Low or Negative,Elago,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Elago,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Elevation Lab,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Elgato,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.0035057289680689623
+Low or Negative,Elgato,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Evutec,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.02299610249091376
+Low or Negative,FCM,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.023110196939443692
+Low or Negative,Fibaro,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.07708658008023558
+Low or Negative,FiftyThree,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Fitbit,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,G-Technology,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,G-Technology,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.09986746097663687
+Low or Negative,Gamevice,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Glyph Atom,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,GoPro,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,GoPro,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Griffin,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Griffin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.011396402683085474
+Low or Negative,Griffin,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.02606940386448672
+Low or Negative,Griffin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.03956775320364545
+Low or Negative,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,HGST Travelstar,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.1928401488737793
+Low or Negative,Harman Kardon,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Henge Docks,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.11322770341445924
+Low or Negative,Henge Docks,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.05648869134882023
+Low or Negative,Hitcase,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.0584705346204689
+Low or Negative,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Honeywell,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.12808536842249865
+Low or Negative,Hyper Pearl,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.09885336094784054
+Low or Negative,Hyper Pearl,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,Hyper Pearl,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.028501528050512825
+Low or Negative,Hyper Pearl,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.028032710705635098
+Low or Negative,I AM,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,IK Multimedia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,IK Multimedia,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,IK Multimedia,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Incase,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Incase,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,JBL,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.07274073917021341
+Low or Negative,Jabra,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.08124898453070446
+Low or Negative,Jawbone,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Jawbone,NOT in TOP Brands,In TOP Categories,Monitors,
+Low or Negative,Jaybird,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Jaybird,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Jaybird,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Jaybird,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.042316526561319845
+Low or Negative,Jaybird,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.008981661596951369
+Low or Negative,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.11043152607484671
+Low or Negative,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Joby,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Just Mobile,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Just Mobile,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.04873115192014749
+Low or Negative,Just Mobile,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,Just Mobile,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.1474905478569609
+Low or Negative,Just Mobile,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Kaiser Baas,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Kanex,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Kanex,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Kanex,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,Kanex,NOT in TOP Brands,NOT in TOP Categories,Cables,0.15240997304542375
+Low or Negative,Kanex,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Kanex,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.07737916979806371
+Low or Negative,Kanex,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Kenu Airframe,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.09998086625104699
+Low or Negative,Kingston,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.04294978351483802
+Low or Negative,Kingston,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Koogeek,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.08015925629596636
+Low or Negative,Kukaclip,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.1549195897916709
+Low or Negative,LG,In TOP Brands,In TOP Categories,Monitors,0.04390383210983475
+Low or Negative,LG,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",0.028295465036208927
+Low or Negative,LMP,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,LMP,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.13483997249264854
+Low or Negative,LMP,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,LMP,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.06401843970068324
+Low or Negative,LMP,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.026938622922018263
+Low or Negative,LaCie,In TOP Brands,In TOP Categories,Apple iMac,
+Low or Negative,LaCie,In TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,LaCie,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.061670670575533194
+Low or Negative,LandingZone,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,LandingZone,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Leef,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Lexar,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.09238359406506352
+Low or Negative,Lifeproof,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.019520183415364326
+Low or Negative,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Logitech,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Logitech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.06447790500333338
+Low or Negative,Logitech,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.10681570256373067
+Low or Negative,Logitech,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.0887041240356974
+Low or Negative,Lunatik,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Macally,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Macally,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.18284759552531366
+Low or Negative,Macally,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.052888570798625176
+Low or Negative,Macally,NOT in TOP Brands,NOT in TOP Categories,Cables,-0.3333333333333334
+Low or Negative,Macally,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Macally,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.061075493394267016
+Low or Negative,Macally,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Macally,NOT in TOP Brands,NOT in TOP Categories,Routers,
+Low or Negative,Maclocks,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.6546536707079772
+Low or Negative,Maclocks,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Matias,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Low or Negative,Matias,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.03789918885994227
+Low or Negative,Mediterrans,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Microsoft,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Low or Negative,Microsoft,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.2175930465308582
+Low or Negative,Minibatt,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Minibatt,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.03983219177274264
+Low or Negative,Mistify,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Mobility Lab,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Moleskine,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Mophie,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.15269597956778633
+Low or Negative,Mophie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.05730253637275439
+Low or Negative,Mophie,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.25000000000000006
+Low or Negative,Mophie,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.010638297872340427
+Low or Negative,Moshi,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Moshi,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.04922370566339264
+Low or Negative,Moshi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Moxie,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Moxie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.07735184462580098
+Low or Negative,Moxie,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Muvit,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Muvit,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.049811178385247235
+Low or Negative,Muvit,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Muvit,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,My MW,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.03492151478847882
+Low or Negative,MyFox,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Ndevr,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Nest,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Nest,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+Low or Negative,Netatmo,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.08274382343534183
+Low or Negative,Netatmo,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",-0.1460924899505542
+Low or Negative,NewerTech,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,NewerTech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.10899721502362565
+Low or Negative,NewerTech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.01839142803661223
+Low or Negative,NewerTech,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Batteries,0.07189042583825
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Cables,0.13579150766351863
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.0888845626420754
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Low or Negative,Nimbus,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.26515084836345243
+Low or Negative,Ninebot,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.19916318363940302
+Low or Negative,Nodon,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Noke,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Nokia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Nokia,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+Low or Negative,Nomad,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Nomad,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Nomad,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,Nomad,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Nomad,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Nonda,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Nonda,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Nonda,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,OWC,In TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,OWC,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.011566738165735262
+Low or Negative,OWC,In TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,OWC,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,OWC,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.08194153909198738
+Low or Negative,OWC,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.035801788700842746
+Low or Negative,Oblumi,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Olixar,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Olloclip,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Opulus,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Osmo,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.17868005014532656
+Low or Negative,Otterbox,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.028968660602919152
+Low or Negative,Otterbox,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,Otterbox,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Otterbox,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Pack,In TOP Brands,In TOP Categories,Apple MacBook,
+Low or Negative,Pack,In TOP Brands,In TOP Categories,Apple iMac,-0.0030793568943753647
+Low or Negative,Pack,In TOP Brands,In TOP Categories,Apple iPhone,
+Low or Negative,Pack,In TOP Brands,In TOP Categories,Electronic Devises,0.17719980579828076
+Low or Negative,Pack,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.02162798423046599
+Low or Negative,Pack,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Pack,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Pack,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Pack,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.07761505255970388
+Low or Negative,Parrot,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Parrot,NOT in TOP Brands,NOT in TOP Categories,Drones,
+Low or Negative,Pebble,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Pebble,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Philips,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.059981169133795274
+Low or Negative,Philips,NOT in TOP Brands,In TOP Categories,Monitors,
+Low or Negative,Philips,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,Plantronics,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Plantronics,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Polaroid,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.0612917177858739
+Low or Negative,Pqi,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Promise,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Prynt,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.0623313956290148
+Low or Negative,Puro,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Puro,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.05233563551777322
+Low or Negative,QDos,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,QNAP,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,QNAP,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Qardio,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Rain Design,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.21066721606327907
+Low or Negative,Repair,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Low or Negative,Replacement,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Replacement,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.03464187896815457
+Low or Negative,Retrak Utopia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Runstastic,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Runstastic,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Ryval,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.09128709291752775
+Low or Negative,Ryval,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,SDesign,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.1611645928050764
+Low or Negative,STM,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.07612897590967627
+Low or Negative,Samsung,NOT in TOP Brands,In TOP Categories,Monitors,0.08144746939156747
+Low or Negative,Samsung,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.005916863080048372
+Low or Negative,SanDisk,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.07215638046798588
+Low or Negative,Satechi,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.5012516172384905
+Low or Negative,Satechi,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Satechi,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Satechi,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.14556826124548866
+Low or Negative,Satechi,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,Satechi,NOT in TOP Brands,NOT in TOP Categories,Cables,-0.09999999994969762
+Low or Negative,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.028274057880657986
+Low or Negative,Satechi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.000273257112504511
+Low or Negative,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.041838080899464836
+Low or Negative,Seagate,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.07903168808177141
+Low or Negative,SecurityXtra,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,SecurityXtra,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,SecurityXtra,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,SecurityXtra,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Sen.se,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Sena,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Sena,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Sena,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Service,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.013698630136986028
+Low or Negative,Service,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.02702702702702697
+Low or Negative,Software,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Sonnet,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Low or Negative,Sonnet,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Sonnet,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.09206195706767262
+Low or Negative,Sonnet,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Sonnet,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,Sonos,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.02660257118232339
+Low or Negative,Spek SeeThru,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.0646999782195328
+Low or Negative,Sphero,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.17229524654514
+Low or Negative,Sphero,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Stacked,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Startech,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Startech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.07873577226392571
+Low or Negative,Startech,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,Startech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.040483718862051196
+Low or Negative,Startech,NOT in TOP Brands,NOT in TOP Categories,Routers,
+Low or Negative,Stikgo,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.03327791628198612
+Low or Negative,Stil Mind,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,SwitchEasy,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,SwitchEasy,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,SwitchEasy,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Synology,In TOP Brands,In TOP Categories,Electronic Devises,-0.04331398326174114
+Low or Negative,Synology,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.024116100143685325
+Low or Negative,Synology,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Synology,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Low or Negative,Synology,In TOP Brands,NOT in TOP Categories,Routers,0.4806522690742154
+Low or Negative,TP-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.13605778879275174
+Low or Negative,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Low or Negative,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Low or Negative,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Low or Negative,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,-0.12099255210329671
+Low or Negative,Tado,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.08528112273596784
+Low or Negative,Tangram,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Tech21,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.1195228609334393
+Low or Negative,Thule,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.0411793532145597
+Low or Negative,Tigra,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Tile,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Toshiba,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.006833136544281434
+Low or Negative,TrackR,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.12451365049552994
+Low or Negative,Trascend,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.18489555359021295
+Low or Negative,Trascend,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.05454881711642367
+Low or Negative,Tribe,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Tribe,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Trunk Sleeve,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.07254753844569986
+Low or Negative,Tucano,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Tucano,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.026627818939763254
+Low or Negative,Twelve South,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Twelve South,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Twelve South,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Low or Negative,Twelve South,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.09285352466537873
+Low or Negative,Urban Armor Gear,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,Apple iMac,
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,Electronic Devises,-0.14397854478279792
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,Monitors,
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,Wacom,In TOP Brands,In TOP Categories,Tablets,0.05481921930109685
+Low or Negative,Wacom,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Low or Negative,Wacom,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.1322088356227867
+Low or Negative,Western Digital,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.15018637742318228
+Low or Negative,Whoosh,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.15309310892394812
+Low or Negative,Wikango,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,Withings,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.05709944596815521
+Low or Negative,Withings,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+Low or Negative,Wowewa,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.15296852072165207
+Low or Negative,Wowewa,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,X-Doria,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.017155743320534638
+Low or Negative,X-Doria,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,-0.08727435720834006
+Low or Negative,X-Rite,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Low or Negative,Xoopar,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,Xoopar,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Low or Negative,Xtorm,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",0.33333333333333326
+Low or Negative,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.04208009313299948
+Low or Negative,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Low or Negative,ZaggKeys,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Low or Negative,Zepp,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,iFixit,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.04273901651189734
+Low or Negative,iFrogz,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Low or Negative,iHealth,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.08127413407515247
+Low or Negative,iOttie,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Low or Negative,iOttie,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.026299137050953984
+Low or Negative,iOttie,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,8Mobility,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Adonit,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Akitio,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Akitio,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Allocacoc,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.2227177928512399
+Medium,Apple,In TOP Brands,In TOP Categories,Apple MacBook,-0.07334005849121697
+Medium,Apple,In TOP Brands,In TOP Categories,Apple iMac,-0.08494342641007696
+Medium,Apple,In TOP Brands,In TOP Categories,Apple iPad,0.12006691944429128
+Medium,Apple,In TOP Brands,In TOP Categories,Apple iPhone,0.07459931270515291
+Medium,Apple,In TOP Brands,In TOP Categories,Electronic Devises,0.05714925454820082
+Medium,Apple,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Apple,In TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.08797065936196152
+Medium,Apple,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.012184503492398363
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Apple Watch,
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Apple iPod,
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Cables,0.10137628373556981
+Medium,Apple,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.13989008772365136
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.031210047420520765
+Medium,Apple,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.10180621277825144
+Medium,Apple,In TOP Brands,NOT in TOP Categories,Routers,-0.21169518003158322
+Medium,Be.ez,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Beats,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.06124427736702091
+Medium,Belkin,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.04260409495835976
+Medium,Belkin,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Belkin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.08418706093682761
+Medium,Belkin,NOT in TOP Brands,NOT in TOP Categories,Cables,0.4804515255559718
+Medium,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.01633972625011591
+Medium,Belkin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.17159918168118504
+Medium,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.3162130090164235
+Medium,Belkin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,BenQ,NOT in TOP Brands,In TOP Categories,Monitors,-0.08258059265320374
+Medium,Blue Microphones,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Blue Microphones,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Booq,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Bose,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.04629364558274659
+Medium,Casetify,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Crucial,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.034265254695972754
+Medium,Cyberpower,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.2169101481726067
+Medium,D-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.3225389738977775
+Medium,D-Link,NOT in TOP Brands,In TOP Categories,Monitors,
+Medium,D-Link,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.23426064283290918
+Medium,D-Link,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",-0.20925346699792977
+Medium,D-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,-0.2755574815982363
+Medium,DJI,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.999999999999999
+Medium,DJI,NOT in TOP Brands,NOT in TOP Categories,Drones,
+Medium,Dell,In TOP Brands,In TOP Categories,Monitors,-0.05964088969063249
+Medium,Devia,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Devolo,NOT in TOP Brands,NOT in TOP Categories,Routers,0.884232341190122
+Medium,Dodocool,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Drobo,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Eizo,NOT in TOP Brands,In TOP Categories,Monitors,
+Medium,Eizo,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Elago,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.18266901737843572
+Medium,Elago,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.007590609679203939
+Medium,Elago,NOT in TOP Brands,NOT in TOP Categories,Cables,-0.20814079896736398
+Medium,Elago,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.006253066267188567
+Medium,Elago,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Elago,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Elgato,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.06252392539887956
+Medium,Elgato,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Evutec,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,FCM,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.13098864765359058
+Medium,Fibaro,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Fitbit,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,G-Technology,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.07555188759223831
+Medium,Gamevice,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Glyph Atom,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,GoPro,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,GoPro,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Griffin,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Griffin,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.03151654511724496
+Medium,Griffin,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.3075143684158656
+Medium,Griffin,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.14158574188451975
+Medium,Griffin,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.1269423076855712
+Medium,HGST Travelstar,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Harman Kardon,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Henge Docks,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Henge Docks,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Medium,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.8660254037844386
+Medium,Hoco Nike,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,Honeywell,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.40824829046386263
+Medium,Hyper Pearl,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Hyper Pearl,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",-0.08998425413316931
+Medium,IK Multimedia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,IK Multimedia,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Incase,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Incase,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,JBL,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.14150683947028575
+Medium,Jabra,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",-0.1670785551646915
+Medium,Jaybird,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Jaybird,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Jaybird,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Jaybird,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Jaybird,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.49999999999999994
+Medium,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Jaybird,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,Just Mobile,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.06287946589984754
+Medium,Kanex,NOT in TOP Brands,NOT in TOP Categories,Cables,-0.08056638705062902
+Medium,Kanex,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.043988027017108355
+Medium,Kanex,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,Kenu Airframe,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Kingston,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.10726989238726119
+Medium,Kingston,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Kukaclip,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,LG,In TOP Brands,In TOP Categories,Monitors,-0.09117452827307422
+Medium,LG,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",-0.4038375539244612
+Medium,LMP,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,LMP,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,LMP,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,LMP,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,LaCie,In TOP Brands,In TOP Categories,Apple iMac,
+Medium,LaCie,In TOP Brands,In TOP Categories,Electronic Devises,
+Medium,LaCie,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.004769497553238482
+Medium,LandingZone,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Leef,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Lexar,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.1126625710690364
+Medium,Lifeproof,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.0557363345134063
+Medium,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Lifeproof,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.209213422867269
+Medium,Logitech,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Logitech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Logitech,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Logitech,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.12683018761389703
+Medium,Macally,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.4011527029818481
+Medium,Macally,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Macally,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,Macally,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Macally,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Macally,NOT in TOP Brands,NOT in TOP Categories,Routers,
+Medium,Matias,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Medium,Matias,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",-0.13871353060214
+Medium,Mediterrans,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Microsoft,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Medium,Minibatt,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.06740256503598503
+Medium,Mobility Lab,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Moleskine,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",
+Medium,Mophie,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Mophie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.016759646208694346
+Medium,Mophie,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,Moshi,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.09378812351727552
+Medium,Moshi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Moxie,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.1969816486542701
+Medium,Muvit,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.11497338451656537
+Medium,Muvit,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.23041168490683955
+Medium,My MW,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Nest,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Nest,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",
+Medium,Netatmo,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.5227745922249124
+Medium,Netatmo,NOT in TOP Brands,NOT in TOP Categories,"Cameras, Security system",0.2317679538228765
+Medium,NewerTech,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,NewerTech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.29641369278801266
+Medium,NewerTech,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Batteries,-0.15632898617662544
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Cables,0.39378151432646946
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.07283242556288182
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,NewerTech,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Ninebot,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.02298132953032042
+Medium,Nokia,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Nomad,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Nomad,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,Nomad,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,Nonda,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,OWC,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.028630930578002808
+Medium,OWC,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.17772630042742524
+Medium,OWC,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Oblumi,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Olixar,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Olloclip,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Osmo,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Otterbox,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.1032411941777443
+Medium,Otterbox,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,Pack,In TOP Brands,In TOP Categories,Apple MacBook,
+Medium,Pack,In TOP Brands,In TOP Categories,Apple iMac,
+Medium,Pack,In TOP Brands,In TOP Categories,Electronic Devises,0.07579088236226197
+Medium,Pack,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.0021672194627343133
+Medium,Pack,In TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Pack,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.08430549151152812
+Medium,Pack,In TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Pack,In TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Parrot,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Parrot,NOT in TOP Brands,NOT in TOP Categories,Drones,
+Medium,Pebble,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Philips,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.10142132082049272
+Medium,Philips,NOT in TOP Brands,NOT in TOP Categories,Batteries,
+Medium,Plantronics,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.20622869633365656
+Medium,Polaroid,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.5773502691897401
+Medium,Puro,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.22442905709998423
+Medium,QNAP,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.22124985909651845
+Medium,Rain Design,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.023184140812453076
+Medium,Repair,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Replacement,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Replacement,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",0.07026378112594822
+Medium,SDesign,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,STM,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.07681302377636581
+Medium,Samsung,NOT in TOP Brands,In TOP Categories,Monitors,0.38895633334738017
+Medium,Samsung,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.039903515314671255
+Medium,SanDisk,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.049885839438176593
+Medium,Satechi,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Satechi,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.15875867349121195
+Medium,Satechi,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Satechi,NOT in TOP Brands,NOT in TOP Categories,Cables,0.10774768135476984
+Medium,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.1834793152326649
+Medium,Satechi,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.05031220358310182
+Medium,Satechi,NOT in TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.01642756965570239
+Medium,Seagate,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.03486151498606911
+Medium,SecurityXtra,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,SecurityXtra,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,
+Medium,Sen.se,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.09056065838355609
+Medium,Sena,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,Sena,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Service,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Service,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Sonnet,NOT in TOP Brands,In TOP Categories,Apple iMac,
+Medium,Sonnet,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Sonnet,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,-0.0912858425721216
+Medium,Sonos,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",0.19825060762135302
+Medium,Spek SeeThru,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.06231049337404625
+Medium,Sphero,NOT in TOP Brands,In TOP Categories,Electronic Devises,-0.1008583072587222
+Medium,Stacked,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Startech,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Startech,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,Startech,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,0.46969115186017124
+Medium,Stikgo,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,SwitchEasy,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Synology,In TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Synology,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Synology,In TOP Brands,NOT in TOP Categories,Routers,
+Medium,TP-Link,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.10352689240665587
+Medium,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Cables,
+Medium,TP-Link,NOT in TOP Brands,NOT in TOP Categories,Routers,-0.14225320769335822
+Medium,Tado,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Tangram,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Tech21,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Thule,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.0005912961819014318
+Medium,Tigra,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Toshiba,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",-0.14437757680533245
+Medium,TrackR,NOT in TOP Brands,In TOP Categories,Electronic Devises,0.10801038654125501
+Medium,Trascend,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Trascend,NOT in TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",
+Medium,Trunk Sleeve,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Tucano,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Tucano,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",0.0018158101321934126
+Medium,Twelve South,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Twelve South,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,Twelve South,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",-0.028569374472229476
+Medium,Urban Armor Gear,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Wacom,In TOP Brands,In TOP Categories,Apple iMac,
+Medium,Wacom,In TOP Brands,In TOP Categories,Electronic Devises,0.05022489474312815
+Medium,Wacom,In TOP Brands,In TOP Categories,Monitors,
+Medium,Wacom,In TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",
+Medium,Wacom,In TOP Brands,In TOP Categories,Tablets,0.06447272269836031
+Medium,Wacom,In TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",
+Medium,Wacom,In TOP Brands,NOT in TOP Categories,"Input devices, styluses",0.10122295341935013
+Medium,Western Digital,In TOP Brands,In TOP Categories,"NAS, HDD, SSD, Memory stick and cards",0.0622400608329824
+Medium,Whoosh,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Withings,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,Wowewa,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.12870125310858457
+Medium,Wowewa,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,X-Doria,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.10175864172949808
+Medium,X-Doria,NOT in TOP Brands,NOT in TOP Categories,Apple Watch Accessories,
+Medium,X-Rite,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",
+Medium,Xoopar,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,Xoopar,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,Xtorm,NOT in TOP Brands,NOT in TOP Categories,"Power Banks, Batteries",
+Medium,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Protection, Cases, Backpacks",-0.0008087783901035326
+Medium,ZaggKeys,NOT in TOP Brands,In TOP Categories,"Sound, Headphones, Players",
+Medium,iFixit,NOT in TOP Brands,NOT in TOP Categories,"Repair service, Install kit, Extended warranty",0.03403760843909878
+Medium,iHealth,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,iOttie,NOT in TOP Brands,In TOP Categories,Electronic Devises,
+Medium,iOttie,NOT in TOP Brands,NOT in TOP Categories,"Charging Dock, Chargers, Stands, Supports",0.05110244598693883
+Medium,iOttie,NOT in TOP Brands,NOT in TOP Categories,Connectivity & Adapters,

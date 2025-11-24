@@ -1,0 +1,7 @@
+top_brand,disc_cat,correlation_coefficient
+In TOP Brands,High,0.07664410688281459
+In TOP Brands,Low or Negative,0.05574638242453852
+In TOP Brands,Medium,0.02574852151020029
+NOT in TOP Brands,High,0.06933461819988938
+NOT in TOP Brands,Low or Negative,0.021432945692590268
+NOT in TOP Brands,Medium,-0.005396602445993197

@@ -8,8 +8,9 @@ Here you can find projects completed as part of the WBS training process, as wel
 So, welcome:
 
 1. __Magist project__ [you can find here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/Magist%20project/README.md).
-2. __ETL project__ [you can find here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ETL_pipline_project/README.md).
-3. __Unsupervised learning algorithms__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/WBSCodingSchool/ML/Unsupervised%20learning).
+2. __Eniac project__ [you can find here]().
+3. __ETL project__ [you can find here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/ETL_pipline_project/README.md).
+4. __Unsupervised learning algorithms__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/WBSCodingSchool/ML/Unsupervised%20learning).
 
 
 ## Final Project
