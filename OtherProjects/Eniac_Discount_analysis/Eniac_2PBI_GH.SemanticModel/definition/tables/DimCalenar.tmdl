@@ -1,0 +1,87 @@
+table DimCalenar
+	lineageTag: f2b59d8c-0f24-4263-89c5-4196acd2cb1b
+	dataCategory: Time
+
+	column Date_full
+		isKey
+		formatString: General Date
+		lineageTag: 1577d457-e375-4f56-a76e-0bbe1e412bce
+		summarizeBy: none
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('DimCalenar'[Date_full])
+		dataType: int64
+		formatString: 0
+		lineageTag: 09ed42d3-de4c-490c-85e0-d5265d55c0ca
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_num = MONTH('DimCalenar'[Date_full])
+		formatString: 0
+		lineageTag: 38b06be0-a4bc-4b85-aa0e-b5f1cc338e85
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_name = FORMAT('DimCalenar'[Date_full], "MMMM")
+		lineageTag: 1a313a20-dad6-4afb-a2cb-5e0f3ee973fb
+		summarizeBy: none
+		sortByColumn: Month_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week_num = WEEKNUM('DimCalenar'[Date_full])
+		formatString: 0
+		lineageTag: b5a4753a-1ece-4c0a-b42c-e482e0692955
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week_day_num = WEEKDAY('DimCalenar'[Date_full])
+		formatString: 0
+		lineageTag: b6f75463-eadc-4dc9-bab4-5d3cbd4b180d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week_day_name = FORMAT('DimCalenar'[Date_full], "dddd")
+		lineageTag: 46acb062-fefd-4191-a958-5266cff09a82
+		summarizeBy: none
+		sortByColumn: Week_day_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date = 'DimCalenar'[Date_full]
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: f6ce24cf-16e8-4dc7-b1cc-ef4ce29162a7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Year_Month = CONCATENATE(CONCATENATE('DimCalenar'[Year],"-"), 'DimCalenar'[Month_num])
+		lineageTag: 6540370b-d2f0-43c2-b525-0ce5ba3651f2
+		summarizeBy: none
+		sortByColumn: Month_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter = FORMAT('DimCalenar'[Date_full], "\QQ")
+		lineageTag: cba14c3e-71f5-4ff1-8f86-94310c166948
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCalenar = calculated
+		mode: import
+		source = CALENDAR(MIN('DimOrders'[created_date_]), MAX('DimOrders'[created_date_]))
+
+	annotation PBI_Id = 1f5a40dcabe94f4ab0b30358ef418036
+

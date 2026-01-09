@@ -1,0 +1,32 @@
+table DimBrands
+	lineageTag: b24ae43e-6eef-42fb-847a-feefae6e06d0
+
+	column short
+		dataType: string
+		lineageTag: 971cb602-3509-4b31-85c3-7d139d9c2502
+		summarizeBy: none
+		sourceColumn: short
+
+		annotation SummarizationSetBy = Automatic
+
+	column long
+		dataType: string
+		lineageTag: a844910a-b6d1-4c64-b8cc-ec1092148db3
+		summarizeBy: none
+		sourceColumn: long
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimBrands = m
+		mode: import
+		queryGroup: Model
+		source =
+				let
+				    Source = brands_RAW
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

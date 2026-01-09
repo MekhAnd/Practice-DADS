@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "75a0bdb98c33639ea91b",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 1000,
+    "height": 349.02079395085065,
+    "width": 253.06616257088842,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "FILTERS_PANE",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "876143a44f17e014ed04",
+  "isHidden": true
+}

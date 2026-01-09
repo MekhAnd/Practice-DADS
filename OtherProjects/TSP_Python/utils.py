@@ -30,8 +30,11 @@ def columns_data_type(df):
         df[col] = df[col].replace({'null': pd.NA, 'Null': pd.NA, '': pd.NA})
         df[col] = df[col].astype(str)
 
-    # Group
+    # # Group
+    if "Group" in df.columns:
         df["Group"] = df['Group'].fillna(0)
+    else:
+        df["Group"] = 0
 
     # numeric
     for col in ["CustomerLon", "CustomerLat"]:
@@ -411,6 +414,34 @@ def map_drawing(df, maps_path_name):
             'green', 'lightred', 'white', 'darkblue', 'darkpurple', 'cadetblue', 'orange', 'pink', 
             'lightgray', 'darkgreen']
         marker_drawing(df, maps_path_name, colours)
+
+def dayly_route_calculating(df, ROUTES, WORKING_DAYS, recalculate = False):
+    
+    day_info = []
+
+    if recalculate:
+        pass
+    else:
+        
+        for rout in range(ROUTES):
+                routes_mask = df["ROUTES"] == rout
+
+                tmp_rout_df = df.loc[routes_mask].select_dtypes(
+                    include="number").drop(columns=["index", "Group"])
+                day_labels = kmeans_model(tmp_rout_df, WORKING_DAYS)
+                tmp_rout_df["DAY"] = day_labels
+        
+                day_info.append(tmp_rout_df)
+
+        daily_routes = pd.concat(day_info)
+        daily_routes = daily_routes.drop(columns=["CustomerLon", "CustomerLat", 
+                                                  "ROUTES"]).reset_index()
+        customer_base = df.merge(
+            daily_routes,
+            on="index",
+            how="left"
+        )
+    return customer_base
 
 
 def marker_drawing(df, maps_path_name, colours):

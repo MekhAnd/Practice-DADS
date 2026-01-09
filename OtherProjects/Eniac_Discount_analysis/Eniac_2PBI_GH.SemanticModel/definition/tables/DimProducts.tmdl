@@ -1,0 +1,84 @@
+table DimProducts
+	lineageTag: 504e6b3f-098c-4197-86e9-7aa7b7fb66cc
+
+	column sku
+		dataType: string
+		lineageTag: 47b914ee-75a4-40b6-9d31-14f6a96f3450
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 8fc92da2-fa04-4f6c-95c2-fdafaccdd017
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column desc
+		dataType: string
+		lineageTag: 513f82bc-4ebf-44da-bf83-09d5bbd76dd8
+		summarizeBy: none
+		sourceColumn: desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column price
+		dataType: double
+		lineageTag: d38023ba-4dd5-41f0-a34d-1aa451d6d748
+		summarizeBy: sum
+		sourceColumn: price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column in_stock
+		dataType: int64
+		formatString: 0
+		lineageTag: cd8a1ee9-5050-48c9-9023-a45132e6d201
+		summarizeBy: sum
+		sourceColumn: in_stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: int64
+		formatString: 0
+		lineageTag: 11bca437-f8b3-470a-b097-50a63cd736d3
+		summarizeBy: sum
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 080a6243-e91b-42ad-b0f5-582134c9c1e7
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand_code
+		dataType: string
+		lineageTag: 7d358ea1-33aa-48e8-8415-02b401b25237
+		summarizeBy: none
+		sourceColumn: brand_code
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProducts = m
+		mode: import
+		queryGroup: Model
+		source =
+				let
+				    Source = products_with_categoies
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

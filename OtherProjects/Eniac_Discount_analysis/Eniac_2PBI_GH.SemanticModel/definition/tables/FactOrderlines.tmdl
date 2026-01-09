@@ -1,0 +1,139 @@
+table FactOrderlines
+	lineageTag: 1a101cc2-7176-4397-8e51-03dae0f889f5
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: bebaeace-bca6-4b5f-aeae-bf3fd1e9c922
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_order
+		dataType: int64
+		formatString: 0
+		lineageTag: ef3a7207-ea6f-4dc3-898b-ad3e242d139e
+		summarizeBy: none
+		sourceColumn: id_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e3a4979-d26d-4198-8ebc-f852b7e27646
+		summarizeBy: sum
+		sourceColumn: product_quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column sku
+		dataType: string
+		lineageTag: 87c46173-208d-4ef8-86a0-bb1d63077887
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_price
+		dataType: double
+		lineageTag: ebb5108c-bc6b-4f61-9e6f-39ac6d71d351
+		summarizeBy: sum
+		sourceColumn: unit_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 357290da-2647-45fd-b272-9b6d3c978878
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 3787ca45-5b86-489f-bdc4-97a9f6fffacd
+			defaultHierarchy: LocalDateTable_de8ac2c8-9bd5-4f59-9942-1c7f889413ff.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenue
+		dataType: double
+		lineageTag: 5ee2b63a-1aa9-4a76-8ed9-3a92594723a3
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column max_price
+		dataType: double
+		lineageTag: 44ea9d7c-ddc1-42ac-8982-27f14aea9537
+		summarizeBy: sum
+		sourceColumn: max_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount
+		dataType: double
+		lineageTag: 6b83c7ff-65dd-4adc-86bd-4464ac86e19f
+		summarizeBy: sum
+		sourceColumn: discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_discount
+		dataType: double
+		lineageTag: 1bd985e9-3ba9-4d62-bd89-58d21464d2cc
+		summarizeBy: sum
+		sourceColumn: total_discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percentage_discount
+		dataType: double
+		lineageTag: a0910218-6893-4231-ba94-7eee215d74e2
+		summarizeBy: sum
+		sourceColumn: percentage_discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column date_
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 55a084b6-e9c4-4bbe-8186-32e3ad055676
+		summarizeBy: none
+		sourceColumn: date_
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FactOrderlines = m
+		mode: import
+		queryGroup: Model
+		source =
+				let
+				    Source = orderlines_with_orders,
+				    #"Duplicated Column" = Table.DuplicateColumn(Source, "date", "date - Copy"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Duplicated Column",{{"date - Copy", type date}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"date - Copy", "date_"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

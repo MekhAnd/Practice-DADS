@@ -1,0 +1,762 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Filters_Box: is invisible",
+  "name": "cc9f800f657da20e58c8",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "75a0bdb98c33639ea91b",
+      "b339e575d6c150db1aab",
+      "2a22799fa5e1cb7b9e0c",
+      "101b3fb00d08d7d0e5a8",
+      "9024a07aef64ed553ae8",
+      "e78875b3bf5b257663f1",
+      "f6d28751fe96b3c03a8f",
+      "d39131f6ce4553e7e60f",
+      "50ea6b6b88b4a4ac106d",
+      "5430ea852990240de15e"
+    ],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "f5e57a5b3c0b61852c81",
+    "sections": {
+      "f5e57a5b3c0b61852c81": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "267bf67e08ee2b472142",
+              "type": "Advanced",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCalenar"
+                    }
+                  },
+                  "Property": "Month_name"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "9c289b9a390590c7d348": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "542c4d13abdc0c77a7ab",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "FactOrderlines"
+                            }
+                          },
+                          "Property": "revenue"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "2445ce6ee52e8260237b": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7d6482aa932d3cea6bb1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a7c082f7e9a23b4e78a3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "revenue_AVG"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "revenue_AVG"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "535c5cd4020d0800b210": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "75ebaa7d60dc3682e094",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_AVG"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_AVG"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7c9c93201e9e08e330b3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f00600889b1d3060debd",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_QTY"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_QTY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c493ad507399cab6330d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cc437332270518066338",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_month_QTY"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "order_month_QTY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "95061a6508e100db00c6": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "2a22799fa5e1cb7b9e0c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2a0cb30a7dad05847795",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "101b3fb00d08d7d0e5a8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9b6f2fa2c576323356c6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimDiscountGroup"
+                        }
+                      },
+                      "Property": "discount_lvl"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimDiscountGroup"
+                        }
+                      },
+                      "Property": "discount_lvl"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cad695f57d871b029691": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4a135473800c43b491b0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5a9fa4a0495b1989a92a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_discount_Apple"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7ce75571a60c08381226",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_QTY_Apple"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_discount_Apple"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "385b1c76be6b87f36d46": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2a4ef1d354a9169b2491",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "42a9ff60bcd4b83518dc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_discount_Samsung"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "89b43f1c1a784c075e3e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_QTY_Samsung"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MeasureTables"
+                        }
+                      },
+                      "Property": "recalculated_discount_Samsung"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Week_num"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b339e575d6c150db1aab": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "9024a07aef64ed553ae8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f6d28751fe96b3c03a8f": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d39131f6ce4553e7e60f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "50ea6b6b88b4a4ac106d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "77dec397920464808209",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Month_name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Month_name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5430ea852990240de15e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b63522fd22a30577dbe0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCalenar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e78875b3bf5b257663f1": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "876143a44f17e014ed04": {
+            "children": {
+              "75a0bdb98c33639ea91b": {
+                "isHidden": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

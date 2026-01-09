@@ -1,0 +1,79 @@
+table DimDiscountGroup
+	lineageTag: f64224c5-541e-48a4-abe4-b098436c2855
+
+	column id_order
+		dataType: int64
+		formatString: 0
+		lineageTag: af5b5351-760c-4efe-9473-2a8f9d4be802
+		summarizeBy: none
+		sourceColumn: id_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column items_num
+		dataType: double
+		lineageTag: 6e81c491-feb9-4e54-b4ae-a0d022bc4c6e
+		summarizeBy: sum
+		sourceColumn: items_num
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_sum
+		dataType: double
+		lineageTag: 3063b531-b129-49c8-a351-48aee09cbdc1
+		summarizeBy: sum
+		sourceColumn: order_sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_sum
+		dataType: double
+		lineageTag: 90676ac9-81e6-48f0-a5be-ba9a5471d5c7
+		summarizeBy: sum
+		sourceColumn: discount_sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_perc
+		dataType: double
+		lineageTag: 7c86bb87-e20a-4e3a-9159-632524191b95
+		summarizeBy: sum
+		sourceColumn: discount_perc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_lvl
+		dataType: string
+		lineageTag: 9516791f-8827-48b1-a7dd-0dcaff945443
+		summarizeBy: none
+		sourceColumn: discount_lvl
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDiscountGroup = m
+		mode: import
+		queryGroup: Model
+		source =
+				let
+				    Source = FactOrderlines,
+				    #"Grouped Rows" = Table.Group(Source, {"id_order"}, {{"items_num", each List.Sum([product_quantity]), type nullable number}, {"order_sum", each List.Sum([revenue]), type nullable number}, {"discount_sum", each List.Sum([total_discount]), type nullable number}}),
+				    #"Added Custom" = Table.AddColumn(#"Grouped Rows", "Custom", each [discount_sum]/[order_sum]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Custom", Percentage.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Custom", "discount_perc"}}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Renamed Columns", "Custom", each if [discount_perc] <= 0.10 then "Low or Negative" else if [discount_perc] <= 0.25 then "Medium" else "High"),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Added Conditional Column",{{"Custom", "discount_lvl"}})
+				in
+				    #"Renamed Columns1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

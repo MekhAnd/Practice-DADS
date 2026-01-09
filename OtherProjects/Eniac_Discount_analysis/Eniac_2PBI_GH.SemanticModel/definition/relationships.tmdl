@@ -1,0 +1,40 @@
+relationship 650fc2bd-06b0-41b1-859e-49c3be909680
+	crossFilteringBehavior: bothDirections
+	fromColumn: FactOrderlines.id_order
+	toColumn: DimOrders.order_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 2b063727-5e8f-b879-bff9-af4c4f9ed586
+	fromColumn: DimProducts.brand_code
+	toColumn: DimBrands.short
+
+relationship 12f3f98e-04f8-0d87-8266-9a368237591a
+	fromColumn: FactOrderlines.sku
+	toColumn: DimProducts.sku
+
+relationship 79a3a1e4-2620-4275-95d9-ce0319a8afa2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimOrders.created_date
+	toColumn: LocalDateTable_091fbc7f-a67a-4d15-9b51-094a244c1957.Date
+
+relationship 93570914-cc9c-4c77-b3aa-b896ed84568a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimOrders.created_date_
+	toColumn: LocalDateTable_8d0a24c1-71a3-4582-9cc2-933a9e45b64f.Date
+
+relationship 3787ca45-5b86-489f-bdc4-97a9f6fffacd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactOrderlines.date
+	toColumn: LocalDateTable_de8ac2c8-9bd5-4f59-9942-1c7f889413ff.Date
+
+relationship abd7afe0-d845-ffab-fc72-b7e35a356058
+	fromColumn: FactOrderlines.date_
+	toColumn: DimCalenar.Date
+
+relationship 22799416-fa17-2963-d5b5-c4e540b4fa78
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: DimDiscountGroup.id_order
+	toColumn: DimOrders.order_id
+

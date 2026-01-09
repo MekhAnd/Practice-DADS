@@ -1,0 +1,20 @@
+table Brand_Slicer_Table
+	lineageTag: 1f3055e0-e089-4b0a-83b9-a352b33fa4bf
+
+	column Brand
+		lineageTag: 0044dee9-d61b-4efb-bb67-ea2bd18c0bc4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Brand]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Brand_Slicer_Table = calculated
+		mode: import
+		source =
+				UNION(
+				    SELECTCOLUMNS(DISTINCT('DimBrands'[long]), "Brand", 'DimBrands'[long]),
+				    DATATABLE("Brand", STRING, {{"*All Brands"}}))
+
+	annotation PBI_Id = c6b948499d8c4f5faf52b41f164e0e06
+

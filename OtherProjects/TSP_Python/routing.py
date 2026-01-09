@@ -68,24 +68,26 @@ customer_base.to_csv("./Tables/all_routes.csv")
 map_path_name = "./Maps/all_points_routes.html"
 map_drawing(customer_base, map_path_name)
 
-day_info = []
+customer_base = dayly_route_calculating(customer_base, ROUTES, WORKING_DAYS)
 
-for rout in range(ROUTES):
-        routes_mask = customer_base["ROUTES"] == rout
+# day_info = []
 
-        tmp_rout_df = customer_base.loc[routes_mask].select_dtypes(include="number").drop(columns=["index", "Group"])
-        day_labels = kmeans_model(tmp_rout_df, WORKING_DAYS)
-        tmp_rout_df["DAY"] = day_labels
+# for rout in range(ROUTES):
+#         routes_mask = customer_base["ROUTES"] == rout
+
+#         tmp_rout_df = customer_base.loc[routes_mask].select_dtypes(include="number").drop(columns=["index", "Group"])
+#         day_labels = kmeans_model(tmp_rout_df, WORKING_DAYS)
+#         tmp_rout_df["DAY"] = day_labels
   
-        day_info.append(tmp_rout_df)
+#         day_info.append(tmp_rout_df)
 
-daily_routes = pd.concat(day_info)
-daily_routes = daily_routes.drop(columns=["CustomerLon", "CustomerLat", "ROUTES"]).reset_index()
-customer_base = customer_base.merge(
-    daily_routes,
-    on="index",
-    how="left"
-)
+# daily_routes = pd.concat(day_info)
+# daily_routes = daily_routes.drop(columns=["CustomerLon", "CustomerLat", "ROUTES"]).reset_index()
+# customer_base = customer_base.merge(
+#     daily_routes,
+#     on="index",
+#     how="left"
+# )
 
 customer_base.to_csv("./Tables/all_routes_days.csv")
 

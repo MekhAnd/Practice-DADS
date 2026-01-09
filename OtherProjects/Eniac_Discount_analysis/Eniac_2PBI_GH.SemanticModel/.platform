@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Eniac_2PBI_GH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "18e8b394-1b92-4341-8f59-a9b85d4c461f"
+  }
+}

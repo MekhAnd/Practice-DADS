@@ -1,0 +1,44 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-001
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 0-Raw
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup Model
+
+	annotation PBI_QueryGroupOrder = 3
+
+queryGroup Cleaning
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["brands_RAW","orderlines_RAW","orders_RAW","products_RAW","DimBrands","DimProducts","DimOrders","DimDiscountGroup","FactOrderlines","orders_CLEAN","orderlines_CLEAN","products_CLEAN","orderlines_with_orders","products_with_categoies","MeasureTables","Discount_Levels"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DimBrands
+ref table DimProducts
+ref table DimOrders
+ref table FactOrderlines
+ref table DimCalenar
+ref table MeasureTables
+ref table DateTableTemplate_6020a2cd-55f7-4a5b-8b77-b13d79166c63
+ref table LocalDateTable_091fbc7f-a67a-4d15-9b51-094a244c1957
+ref table LocalDateTable_8d0a24c1-71a3-4582-9cc2-933a9e45b64f
+ref table LocalDateTable_de8ac2c8-9bd5-4f59-9942-1c7f889413ff
+ref table TopN_brands
+ref table TopN_category
+ref table DimDiscountGroup
+ref table Discount_Levels
+ref table Brand_Slicer_Table
+
+ref cultureInfo en-US
+

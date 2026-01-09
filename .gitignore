@@ -47,6 +47,9 @@ data/
 media/
 upload/
 
+# TMP DIrecories (under reconstrauction or in work)
+TSP_Python/
+
 # Database files
 *.sqlite
 *.db
@@ -65,3 +68,15 @@ upload/
 # Logs and temporary files
 *.log
 tmp/
+
+# Ignore the compiled Power BI files, as we track the source code
+*.pbix
+*.pbit
+
+# Ignore Power BI Desktop internal cache/settings
+.pbi/
+*.json.artifact
+
+# Ignore general system files
+*.DS_Store
+

@@ -18,3 +18,4 @@ __Routing System__ [you can find here](https://github.com/MekhAnd/Practice-DADS/
 
 ## Other Projects
 __Routing System Update__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/TSP_Python)
+__Discount Analysis (Power BI)__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/Eniac_Discount_analysis)

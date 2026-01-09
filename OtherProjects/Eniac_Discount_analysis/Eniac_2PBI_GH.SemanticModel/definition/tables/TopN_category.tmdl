@@ -1,0 +1,25 @@
+table TopN_category
+	lineageTag: ada0088e-0590-40a7-8d7c-4d1473a6eeef
+
+	column TOPN
+		formatString: 0
+		lineageTag: 01afa300-af6a-47a7-8a1b-909a980c8930
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [TOPN]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Labels = IF('TopN_category'[TOPN] = 0, "All", FORMAT('TopN_category'[TOPN], "General Number"))
+		lineageTag: c1f6602a-6e3f-4526-ab5c-cca756169f4b
+		summarizeBy: none
+		sortByColumn: TOPN
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TopN_category = calculated
+		mode: import
+		source = UNION(ROW("TOPN", 0),GENERATESERIES(5,25,5))
+
+	annotation PBI_Id = 3f712527569c464a93facaa609505778
+

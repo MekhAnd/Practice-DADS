@@ -1,0 +1,23 @@
+table Discount_Levels
+	lineageTag: 3b841aa8-c7bf-47f8-84d7-0d7492432cf6
+
+	column Levels
+		dataType: string
+		lineageTag: 113d7e22-dee0-40d7-b132-940ec195c418
+		summarizeBy: none
+		sourceColumn: Levels
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Discount_Levels = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8shMz1CK1YlW8k1NySzNBTN98ssV8osU/FLTE0syy1KVYmMB", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Levels"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

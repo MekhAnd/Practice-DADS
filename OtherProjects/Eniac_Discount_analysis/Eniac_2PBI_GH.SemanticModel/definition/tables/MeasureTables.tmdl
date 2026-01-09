@@ -1,0 +1,751 @@
+table MeasureTables
+	lineageTag: 5235db31-97a6-49e6-bff9-a88918516f74
+
+	measure month_QTY = (DATEDIFF(MIN('DimOrders'[created_date]), MAX('DimOrders'[created_date]), MONTH))
+		formatString: 0
+		lineageTag: 100a26dc-c63a-459a-99c1-8c70826bd0ec
+
+		changedProperty = IsHidden
+
+	measure revenue_AVG = SUM('FactOrderlines'[revenue])/MeasureTables[month_QTY]
+		lineageTag: 4a41619c-df80-4020-8dd5-ea29ba10e19d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure order_SUM = CALCULATE(SUM('FactOrderlines'[revenue]), ALLEXCEPT(FactOrderlines,FactOrderlines[id_order] ))
+		lineageTag: 383ef260-6e69-4500-a69d-93b2149d8309
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure order_QTY = DISTINCTCOUNT(FactOrderlines[id_order])
+		formatString: 0
+		lineageTag: 5f627cc4-fec5-47cf-8ee6-90b2b9356d9c
+
+	measure order_AVG = (SUM('FactOrderlines'[revenue])/[order_QTY])
+		lineageTag: d39adacb-e6cc-441c-bc35-ea4ee0a43bbc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure order_month_QTY = [order_QTY]/[month_QTY]
+		lineageTag: 06a263d4-1247-4420-a28e-d36863a5dfc2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure revenue = SUM(FactOrderlines[revenue])
+		lineageTag: 4aee2288-cb2c-4091-9c6d-75ff6995994b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure discount = SUM(FactOrderlines[total_discount])
+		lineageTag: a78f3ed1-9767-401d-af91-a5cceefcdd96
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure amount_wo_disc = [revenue]+[discount]
+		lineageTag: 00298f3c-b3e6-4169-b89c-c1f4b8d5f286
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rank_Filter_Flag = ```
+			
+			var Selected_Rank = SELECTEDVALUE('TopN_brands'[TOPN],10)
+			var Current_Rank = RANKX(
+			    ALL(DimBrands[long]), 
+			    [revenue], 
+			    , 
+			    DESC, Dense)
+			RETURN
+			SWITCH(TRUE(),
+			 Selected_Rank = 0, 1,
+			 Current_Rank <= Selected_Rank, 1, 
+			 0)
+			--IF(HASONEFILTER(DimBrands[long]),
+			--SWITCH(TRUE(), RANKX(ALLSELECTED(DimBrands[long]), [revenue], ,DESC)<=Selected_Rank,
+			--RANKX(ALLSELECTED(DimBrands[long]), [revenue], ,DESC)
+			--))
+			```
+		lineageTag: 801a8839-d06f-4efc-aff6-1f6ff8ea2a48
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure product_QTY = SUM(FactOrderlines[product_quantity])
+		formatString: 0
+		lineageTag: 98145334-9c85-47ea-85ce-d136e46f5534
+
+	measure CORR_Coeff =
+			
+			var mX = CALCULATE(AVERAGE(FactOrderlines[percentage_discount]))
+			var mY = CALCULATE(AVERAGE(FactOrderlines[product_quantity]))
+			var numerator = SUMX('FactOrderlines',(FactOrderlines[percentage_discount]-mX)*(FactOrderlines[product_quantity]-mY))
+			var denominator = SQRT(SUMX('FactOrderlines', (FactOrderlines[percentage_discount]-mX)^2*SUMX('FactOrderlines', (FactOrderlines[product_quantity]-mY)^2)))
+			RETURN DIVIDE(numerator, denominator)
+		lineageTag: 0a3cb420-ce10-45af-86aa-c342381290c6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure top_rank_CORR_Coeff_Apple = ```
+			
+			var Selected_Rank = SELECTEDVALUE('TopN_category'[TOPN],10)
+			var Is_All_Selected = Selected_Rank = 0
+			var Top_N_List = 
+			    TOPN(Selected_Rank, 
+			    ALL('DimProducts'[category]),
+			    [CORR_Coeff_Apple],
+			    DESC)
+			RETURN 
+			IF(Is_All_Selected, [CORR_Coeff_Apple],
+			    CALCULATE(
+			        [CORR_Coeff_Apple], KEEPFILTERS(Top_N_List))
+			    )
+			```
+		lineageTag: e0b1f268-194d-49a6-94cd-f24874172051
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure avg_perc_discount = AVERAGE(FactOrderlines[percentage_discount])
+		lineageTag: 03a77f0f-c3cd-4ead-8e3c-3aa433f577bb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_DISC_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [avg_perc_discount], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [avg_perc_discount], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [avg_perc_discount],
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [avg_perc_discount], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [avg_perc_discount], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [avg_perc_discount],
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: 4a2de526-e366-498f-8866-90d9f2ee8449
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_QTY_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [product_QTY], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [product_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [product_QTY],
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [product_QTY], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [product_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [product_QTY],
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		formatString: 0
+		lineageTag: aaee2bc9-3eb9-4c1f-811c-8a86f7b9729a
+
+	measure recalculated_REVEN_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [revenue], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [revenue], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [revenue],
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [revenue], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [revenue], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [revenue],
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: fdeee8e4-790f-4057-bfa0-073d07ea85d5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_REVEN_AVG_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [recalculated_REVEN_top_N]/[month_QTY], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [recalculated_REVEN_top_N]/[month_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [recalculated_REVEN_top_N]/[month_QTY], 
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			            [recalculated_REVEN_top_N]/[month_QTY], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                [recalculated_REVEN_top_N]/[month_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts')            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [recalculated_REVEN_top_N]/[month_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: 0dca6f73-842f-4f5b-ba76-f97ce3113e91
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_QTY_ORDER_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [order_QTY], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [order_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [order_QTY], 
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [order_QTY], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [order_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [order_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		formatString: 0
+		lineageTag: bf3fcc53-f587-41af-abb9-90e18f9c2c30
+
+	measure recalculated_QTY_OrderMonth_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [order_QTY]/[month_QTY], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [order_QTY]/[month_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [order_QTY]/[month_QTY], 
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [order_QTY]/[month_QTY], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [order_QTY]/[month_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [order_QTY]/[month_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: cae8936c-6817-4ad0-bc43-9c995855f756
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_QTY_AVGOrder_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Brands = SELECTEDVALUE('TopN_brands'[TOPN], 15)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Rank_Brands = 0
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			VAR Filtered_Brands = 
+			    TOPN(
+			        Selected_Rank_Brands, 
+			        ALL(DimBrands), 
+			        [recalculated_REVEN_top_N]/[order_QTY], 
+			        DESC
+			    )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [recalculated_REVEN_top_N]/[order_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [recalculated_REVEN_top_N]/[order_QTY], 
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [recalculated_REVEN_top_N]/[order_QTY], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [recalculated_REVEN_top_N]/[order_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [recalculated_REVEN_top_N]/[order_QTY], 
+			                    KEEPFILTERS(Filtered_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: 658a7b15-c4e9-4f0c-baff-db9c6eb9f42c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure TMP_recalculated_QTY_AVGOrder_top_N = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Brands = SELECTEDVALUE(Brand_Slicer_Table[Brand])
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Brands = Selected_Brands = "*All Brands"
+			VAR Is_All_Categories = Selected_Rank_categories = 0
+			
+			// VAR Filtered_Brands = 
+			//     TOPN(
+			//         Selected_Brands, 
+			//         ALL(DimBrands), 
+			//         [order_QTY], 
+			//         DESC
+			//     )
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL('DimProducts'), 
+			        [order_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(
+			        Is_All_Brands && Is_All_Categories,                 -- both top-list are empty
+			        [CORR_Coeff],  
+			                                                            -- else check lists by order
+			        IF(
+			            Is_All_Brands,                                  -- Brands-list is empty
+			            CALCULATE(                                      -- calculate without top brands
+			                [CORR_Coeff], 
+			                ALL(DimBrands),                             -- Removes any Brand filter
+			                KEEPFILTERS(Filtered_Categories)            -- Applies Category filter
+			            ),
+			            IF(                                             --  Brand-list is not empty
+			                Is_All_Categories,                          
+			                CALCULATE(
+			                    [CORR_Coeff], 
+			                    KEEPFILTERS(Brand_Slicer_Table[Brand] = Selected_Brands),            -- Applies Brand filter
+			                    ALL('DimProducts'[category])            -- Removes any Category filter
+			                ),
+			                
+			                CALCULATE(                                  -- both are not empty
+			                    [CORR_Coeff],  
+			                    KEEPFILTERS(Brand_Slicer_Table[Brand] = Selected_Brands),
+			                    KEEPFILTERS(Filtered_Categories)
+			                )
+			            )
+			        )
+			    )
+			```
+		lineageTag: c54a045f-f6f5-4874-9722-618fa6d50313
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_discount_Apple = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Categories = Selected_Rank_Categories = 0
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL(DimProducts[category]), 
+			        [Apple_avg_discount], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(Is_All_Categories, [Apple_avg_discount],
+			        CALCULATE([Apple_avg_discount], KEEPFILTERS(Filtered_Categories), KEEPFILTERS('DimBrands'[long]="Apple"))
+			    )
+			```
+		lineageTag: a248c305-e598-4884-a2e1-5063d75ebcd8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure recalculated_discount_Samsung = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Categories = Selected_Rank_Categories = 0
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL(DimProducts[category]), 
+			        [Samsung_avg_discount], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(Is_All_Categories, [Samsung_avg_discount],
+			        CALCULATE([Samsung_avg_discount], KEEPFILTERS(Filtered_Categories), KEEPFILTERS('DimBrands'[long]="Samsung"))
+			    )
+			```
+		lineageTag: 1bb35c03-5445-4f23-b781-b7f72808f697
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Apple_avg_discount = CALCULATE(AVERAGE(FactOrderlines[percentage_discount]), 'DimBrands'[long] = "Apple")
+		lineageTag: 8faaad3b-e97c-4ae9-9bc4-c75d1ac081ff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Apple_product_QTY = CALCULATE(SUM(FactOrderlines[product_quantity]), 'DimBrands'[long] = "Apple")
+		formatString: 0
+		lineageTag: 2ed447e5-61f3-4fd0-8f12-9e989316fe03
+
+	measure Samsung_avg_discount = CALCULATE(AVERAGE(FactOrderlines[percentage_discount]), 'DimBrands'[long] = "Samsung")
+		lineageTag: 47b6ff09-3867-473e-85f8-b77b85ad6fbb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Samsung_product_QTY = CALCULATE(SUM(FactOrderlines[product_quantity]), 'DimBrands'[long] = "Samsung")
+		formatString: 0
+		lineageTag: 5132d730-996b-440b-b680-0410d1219824
+
+	measure recalculated_QTY_Apple = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Categories = Selected_Rank_Categories = 0
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL(DimProducts[category]), 
+			        [Apple_product_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(Is_All_Categories, [Apple_product_QTY],
+			        CALCULATE([Apple_product_QTY], KEEPFILTERS(Filtered_Categories), KEEPFILTERS('DimBrands'[long]="Apple"))
+			    )
+			```
+		formatString: 0
+		lineageTag: 6aa009e4-35d8-45a5-993f-48536324e2da
+
+	measure recalculated_QTY_Samsung = ```
+			
+			-- 1. GET SLICER SELECTIONS AND CHECK FOR 'ALL' (0)
+			VAR Selected_Rank_Categories = SELECTEDVALUE('TopN_category'[TOPN], 15)
+			
+			VAR Is_All_Categories = Selected_Rank_Categories = 0
+			
+			VAR Filtered_Categories = 
+			    TOPN(
+			        Selected_Rank_Categories, 
+			        ALL(DimProducts[category]), 
+			        [Samsung_product_QTY], 
+			        DESC
+			    )
+			
+			RETURN
+			    IF(Is_All_Categories, [Samsung_product_QTY],
+			        CALCULATE([Samsung_product_QTY], KEEPFILTERS(Filtered_Categories), KEEPFILTERS('DimBrands'[long]="Samsung"))
+			    )
+			```
+		formatString: 0
+		lineageTag: e01989e7-00e0-4aa1-a143-23eb905cfda6
+
+	measure CORR_Coeff_Apple =
+			
+			var mX = CALCULATE(AVERAGE(FactOrderlines[percentage_discount]), 'DimBrands'[long] = "Apple")
+			var mY = CALCULATE(AVERAGE(FactOrderlines[product_quantity]), 'DimBrands'[long] = "Apple")
+			var numerator = SUMX('FactOrderlines',(FactOrderlines[percentage_discount]-mX)*(FactOrderlines[product_quantity]-mY))
+			var denominator = SQRT(SUMX('FactOrderlines', (FactOrderlines[percentage_discount]-mX)^2*SUMX('FactOrderlines', (FactOrderlines[product_quantity]-mY)^2)))
+			RETURN DIVIDE(numerator, denominator)
+		lineageTag: 032a43f0-21e4-4a3a-9806-1c205f3b0752
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CORR_Coeff_Samsung =
+			
+			var mX = CALCULATE(AVERAGE(FactOrderlines[percentage_discount]), 'DimBrands'[long] = "Samsung")
+			var mY = CALCULATE(AVERAGE(FactOrderlines[product_quantity]), 'DimBrands'[long] = "Samsung")
+			var numerator = SUMX('FactOrderlines',(FactOrderlines[percentage_discount]-mX)*(FactOrderlines[product_quantity]-mY))
+			var denominator = SQRT(SUMX('FactOrderlines', (FactOrderlines[percentage_discount]-mX)^2*SUMX('FactOrderlines', (FactOrderlines[product_quantity]-mY)^2)))
+			RETURN DIVIDE(numerator, denominator)
+		lineageTag: 10167516-17ff-4e85-85dc-6b145b15520d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure top_rank_CORR_Coeff_Samsung = ```
+			
+			var Selected_Rank = SELECTEDVALUE('TopN_category'[TOPN],10)
+			var Is_All_Selected = Selected_Rank = 0
+			var Top_N_List = 
+			    TOPN(Selected_Rank, 
+			    ALL('DimProducts'[category]),
+			    [CORR_Coeff_Samsung],
+			    DESC)
+			RETURN 
+			IF(Is_All_Selected, [CORR_Coeff_Samsung],
+			    CALCULATE(
+			        [CORR_Coeff_Samsung], KEEPFILTERS(Top_N_List))
+			    )
+			```
+		lineageTag: 440a76d8-f6b2-407a-bc6c-bbc889bba8ff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Brand_Slicer_Measure =
+			
+			VAR Selected_Brand = SELECTEDVALUE(Brand_Slicer_Table[Brand])
+			RETURN
+			    IF(Selected_Brand ="*All Brands" || ISFILTERED(Brand_Slicer_Table[Brand]) = FALSE(),
+			    1,
+			    IF(
+			        SELECTEDVALUE(DimBrands[long]) = Selected_Brand, 1, 0
+			    )
+			)
+		formatString: 0
+		lineageTag: 648ce37a-12a3-4d29-a029-af76a091dfd8
+
+	partition MeasureTables = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

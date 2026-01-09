@@ -1,0 +1,75 @@
+table DimOrders
+	lineageTag: 48057b4f-877b-4b65-a213-6c7e475892f7
+
+	column order_id
+		dataType: string
+		lineageTag: 418d0462-cfc7-44f2-8402-c71db6c29b13
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 02884647-c365-43a4-b6ed-29a3b9520ad7
+		summarizeBy: none
+		sourceColumn: created_date
+
+		variation Variation
+			isDefault
+			relationship: 79a3a1e4-2620-4275-95d9-ce0319a8afa2
+			defaultHierarchy: LocalDateTable_091fbc7f-a67a-4d15-9b51-094a244c1957.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_paid
+		dataType: double
+		lineageTag: 68ff03a7-26d7-4014-9dbb-343b3328aede
+		summarizeBy: sum
+		sourceColumn: total_paid
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column state
+		dataType: string
+		lineageTag: cc8b05be-ab10-43eb-860d-a5b1b872c288
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_date_
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c2fafc3f-07bf-4311-9a1e-8b8b6aa4dbd5
+		summarizeBy: none
+		sourceColumn: created_date_
+
+		variation Variation
+			isDefault
+			relationship: 93570914-cc9c-4c77-b3aa-b896ed84568a
+			defaultHierarchy: LocalDateTable_8d0a24c1-71a3-4582-9cc2-933a9e45b64f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition DimOrders = m
+		mode: import
+		queryGroup: Model
+		source =
+				let
+				    Source = orders_CLEAN,
+				    #"Duplicated Column" = Table.DuplicateColumn(Source, "created_date", "created_date - Copy"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Duplicated Column",{{"created_date - Copy", type date}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"created_date - Copy", "created_date_"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
