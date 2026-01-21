@@ -17,5 +17,5 @@ So, welcome:
 __Routing System__ [you can find here](https://github.com/MekhAnd/Practice-DADS/blob/main/WBSCodingSchool/Final%20WBS%20Project%20-%20Routing%20System/README.md)
 
 ## Other Projects
-__Routing System Update__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/TSP_Python)
-__Discount Analysis (Power BI)__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/Eniac_Discount_analysis)
+1. __Routing System Update__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/TSP_Python)
+2. __Discount Analysis (Power BI)__ [you can find here](https://github.com/MekhAnd/Practice-DADS/tree/main/OtherProjects/Eniac_Discount_analysis)
